@@ -54,4 +54,99 @@ If parent already has a right-child, the new node must take its place, and the o
 
 
 
+3. Delete
+
+#mandatory
+Write a function that deletes an entire binary tree
+
+Prototype: void binary_tree_delete(binary_tree_t *tree);
+Where tree is a pointer to the root node of the tree to delete
+If tree is NULL, do nothing
+
+# Filename: 3-binary_tree_delete.c
+
+
+
+4. Is leaf
+
+#mandatory
+Write a function that checks if a node is a leaf
+
+Prototype: int binary_tree_is_leaf(const binary_tree_t *node);
+Where node is a pointer to the node to check
+Your function must return 1 if node is a leaf, otherwise 0
+If node is NULL, return 0
+
+# Filename: 4-binary_tree_is_leaf.c
+
+
+
+5. Is root
+
+#mandatory
+Write a function that checks if a given node is a root
+
+Prototype: int binary_tree_is_root(const binary_tree_t *node);
+Where node is a pointer to the node to check
+Your function must return 1 if node is a root, otherwise 0
+If node is NULL, return 0
+
+# Filename: 5-binary_tree_is_root.c
+
+
+
+6. Pre-order traversal
+
+#mandatory
+Write a function that goes through a binary tree using pre-order traversal
+
+Prototype: void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+Where tree is a pointer to the root node of the tree to traverse
+And func is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.
+If tree or func is NULL, do nothing
+
+# Filename: 6-binary_tree_preorder.c
+
+
+
+7. In-order traversal
+
+#mandatory
+Write a function that goes through a binary tree using in-order traversal
+
+Prototype: void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+Where tree is a pointer to the root node of the tree to traverse
+And func is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.
+If tree or func is NULL, do nothing
+
+# Filename: 7-binary_tree_inorder.c
+
+
+
+8. Post-order traversal
+
+#mandatory
+Write a function that goes through a binary tree using post-order traversal
+
+Prototype: void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+Where tree is a pointer to the root node of the tree to traverse
+And func is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.
+If tree or func is NULL, do nothing
+
+# 8-binary_tree_postorder.c
+
+
+
+9. Height
+
+#mandatory
+Write a function that measures the height of a binary tree
+
+Prototype: size_t binary_tree_height(const binary_tree_t *tree);
+Where tree is a pointer to the root node of the tree to measure the height.
+If tree is NULL, your function must return 0
+
+# Filename: 9-binary_tree_height.c
+
+
 
